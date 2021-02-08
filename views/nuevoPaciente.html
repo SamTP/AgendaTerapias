@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
@@ -21,27 +22,23 @@
         </ons-toolbar>
         <ons-card>
             <div class="center">
-                <h2>Nueva terapia</h2>
+                <h2>Nuevo paciente</h2>
                 <form action="">
                     <p>
-                        <label>Paciente</label> <br>
-                        <ons-select modifier="underbar">
-                            <option>Seleccione Paciente</option>
-                        </ons-select> <br>
-                        <p style="text-align: center;">
-                            <ons-button modifier="quiet" onclick="location.replace('./nuevoPaciente.html')">Nuevo paciente</ons-button>
-                        </p>
+                        <ons-input type="text" placeholder="Nombre"></ons-input>
                     </p>
                     <p>
-                        <label>Fecha</label> <br>
+                        <ons-input type="text" placeholder="Apellido(s)"></ons-input>
+                    </p>
+                    <p>
+                        <label>Fecha de Nacimiento</label> <br>
                         <ons-input type="date" name="fecha"></ons-input>
                     </p>
                     <p>
-                        <label>Hora</label> <br>
-                        <ons-input type="time" name="fecha"></ons-input>
+                        <ons-input type="number" placeholder="Número de Contacto"></ons-input>
                     </p>
                     <p style="text-align: center;">
-                        <ons-button onclick="alert('Btn')" >Agendar</ons-button>
+                        <ons-button onclick="alert('Btn')" >Guardar</ons-button>
                     </p>
                 </form>
             </div>

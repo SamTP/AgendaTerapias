@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</head>
+
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button onclick="location.replace('../index.html')">
+                    <ons-icon icon="md-home"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center" style="text-align: center;">
+                Agenda Terapias
+            </div>
+        </ons-toolbar>
+        <ons-card>
+            <div class="center">
+                <h2>Nueva terapia</h2>
+                <form action="">
+                    <p>
+                        <label>Paciente</label> <br>
+                        <ons-select modifier="underbar">
+                            <option>Seleccione Paciente</option>
+                        </ons-select> <br>
+                        <p style="text-align: center;">
+                            <ons-button modifier="quiet" onclick="location.replace('./nuevoPaciente.html')">Nuevo paciente</ons-button>
+                        </p>
+                    </p>
+                    <p>
+                        <label>Fecha</label> <br>
+                        <ons-input type="date" name="fecha"></ons-input>
+                    </p>
+                    <p>
+                        <label>Hora</label> <br>
+                        <ons-input type="time" name="fecha"></ons-input>
+                    </p>
+                    <p style="text-align: center;">
+                        <ons-button onclick="alert('Btn')" >Agendar</ons-button>
+                    </p>
+                </form>
+            </div>
+        </ons-card>
+    </ons-page>
+</body>
+
+</html>
