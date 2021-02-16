@@ -4,43 +4,67 @@
             Agenda Terapias
         </div>
     </ons-toolbar>
-    <ons-card>
-        <div class="center">
-            <h2>Terapias para hoy</h2>
-            <p>
-                No tienes nada en el calendario para hoy
-            </p>
-        </div>
-    </ons-card>
-    <ons-card>
-        <div class="center">
-            <h2>Terapias de la semana</h2>
-            <p>
-                Juanito Banana Viernes 4:00pm
-                <a href="">
-                    <ons-button modifier="quiet">Modificar</ons-button>
-                </a>
-            </p>
 
-        </div>
-    </ons-card>
-    <ons-card>
-        <div class="center">
-            <a [routerLink]="['/nueva']">
-                <ons-button modifier="quiet">
-                    <h2>Agendar nueva terapia</h2>
-                </ons-button>
-            </a>
-        </div>
-    </ons-card>
-    <ons-card>
-        <ons-button modifier="quiet">
-            <h2>Pacientes</h2>
-        </ons-button>
-    </ons-card>
-    <ons-card>
-        <ons-button modifier="quiet">
-            <h2>Terapias pasadas</h2>
-        </ons-button>
-    </ons-card>
+    <div class="center" style="margin-top: 40%;">
+        <ons-card>
+            <div class="center">
+                <h2 style="text-align: center;">Iniciar sesión</h2>
+                <form style="text-align: center;">
+                    <p>
+                        <ons-input type="text" placeholder="Usuario" required></ons-input>
+                    </p>
+                    <p>
+                        <ons-input type="password" placeholder="Contraseña" required></ons-input>
+                    </p>
+                    <p>
+                        <ons-button>Iniciar sesión</ons-button>
+                    </p>
+                </form>
+            </div>
+        </ons-card>
+    </div>
+
+    <div class="center" *ngIf="1>2">
+        <ons-card>
+            <div class="center">
+                <h2>Terapias para hoy</h2>
+                <p>
+                    No tienes nada en el calendario para hoy
+                </p>
+            </div>
+        </ons-card>
+        <ons-card>
+            <div class="center">
+                <h2>Terapias de la semana</h2>
+                <p>
+                    Juanito Banana Viernes 4:00pm
+                    <a href="">
+                        <ons-button modifier="quiet">Modificar</ons-button>
+                    </a>
+                </p>
+
+            </div>
+        </ons-card>
+        <ons-card>
+            <div class="center">
+                <a [routerLink]="['/nueva']">
+                    <ons-button modifier="quiet">
+                        <h2>Agendar nueva terapia</h2>
+                    </ons-button>
+                </a>
+            </div>
+        </ons-card>
+        <ons-card>
+            <ons-button modifier="quiet">
+                <h2>Pacientes</h2>
+            </ons-button>
+        </ons-card>
+        <ons-card>
+            <ons-button modifier="quiet">
+                <h2>Terapias pasadas</h2>
+            </ons-button>
+        </ons-card>
+
+    </div>
+
 </ons-page>
